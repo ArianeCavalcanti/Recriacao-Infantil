@@ -1,0 +1,309 @@
+/* Reset de estilos */
+body, html {
+  margin: 0;
+  padding: -10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita barras de rolagem horizontais */
+}
+
+/* Estilo do contêiner do carrossel */
+.carousel-container {
+  width: 100%;
+  max-width: 1920px;
+  height: 490px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem sem deformação */
+}
+
+/* Navegação do carrossel */
+.carousel-nav {
+  position: absolute;
+  bottom: 10%;  /* 10% de distância da parte inferior da imagem */
+  left: 50%;    /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta para o centro exato */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10; /* Garante que os pontos fiquem acima das imagens */
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-dot.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo retângulo do contêiner */
+.container {
+  width: 100%;
+  height: 120px;
+  position:relative;
+  background-color: rgba(255, 204, 0, 0.30);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0x; 
+  padding: 0px; 
+}
+
+/* Estilo retângulo do contêiner2*/
+.container2 {
+  width: 100%;
+  height: 80px; /* Reduzindo a altura do retângulo */
+  background-color: rgba(255, 204, 0, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  margin: 0x; 
+  padding: 0px; 
+}
+
+/* Estilo para a logo */
+.logo {
+    position: absolute; /* Permite posicionamento específico dentro do contêiner */
+    top: -20px; /* Coordenada Y do Figma */
+    left: 330px; /* Coordenada X do Figma */
+    width: 120px; /* Largura da logo */
+    height: auto; /* Altura da logo */
+    transform: rotate(-11.1deg); /* Inclinação da logo */
+    border-radius: 8px; 
+    margin-top: 20px; 
+    flex-wrap: center;
+    
+}
+
+/* Estilo para o texto "Recriação Infantil" */
+.text-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center ;
+}
+
+/* Estilo geral para cada letra */
+.letter {
+  font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
+  font-size: 3rem; /* Tamanho do texto */
+  font-weight: normal; /* Peso normal */
+  display: inline-block; /* Mantém as letras inline */
+  top: 692px; /* Coordenada Y do Figma */
+  left: 97px;
+  margin-left: 10px;
+  text-shadow: 
+  1px 1px 2px rgba(182, 182, 182, 0.5), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(182, 182, 182, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+/* Estilo do menu de navegação */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 50px; /* Ajuste o espaçamento entre o texto e o menu */
+  position: absolute; /* Permite posicionamento específico dentro do contêiner */
+  width: 1440;
+  height: 106;
+  top: -20px;
+ 
+}
+
+/* Estilo para cada item do menu */
+.menu-item {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Cores e estilo de cada item */
+.home {
+  color: #822CAD;
+}
+
+.sobre {
+  color: #E49936;
+}
+
+.servicos {
+  color: #2E9BAE;
+}
+
+.galeria {
+  color: #F64FEB;
+}
+
+.orcamento {
+  color: #387C1B;
+}
+
+.contato {
+  color: #2A30D8;
+}
+
+/* Efeito ao passar o mouse sobre os itens do menu */
+.menu-item:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Adiciona sombra suave ao passar o mouse */
+}
+
+
+/* Estilo do retângulo do footer-contato */
+.footer-contato {
+  width: 100%;
+  height: 400px; /* Altura ajustada */
+  position: relative;
+  background-color: rgba(255, 204, 0, 0.30); /* Fundo com opacidade */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do retângulo do footer-contato */
+.footer-contato {
+  width: 100%;
+  height: 400px; /* Ajuste a altura conforme necessário */
+  position: relative;
+  background-color: rgba(255, 204, 0, 0.30);
+  display: flex;
+  justify-content: space-between; /* Alinha logo e texto de contato */
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Estilo para logo e texto de contato */
+.logo-contato {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 80px; /* Ajuste o tamanho do logo conforme necessário */
+  height: auto;
+  margin-right: 20px; /* Espaço entre logo e texto */
+}
+
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha à esquerda */
+  font-family: 'Lakki Reddy', sans-serif;
+  color: #004E8F; /* Cor azul */
+}
+
+/* Estilo do título "Contato:" */
+.contato-text {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+/* Estilo do número de telefone e WhatsApp */
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.numero-text {
+  font-size: 18px;
+}
+
+/* Estilo do ícone do WhatsApp */
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Estilo do e-mail */
+.email-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Estilo da localização */
+.localizacao-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Estilo para as redes sociais */
+.redes-sociais {
+  position: absolute;
+  bottom: 2%; /* Distância de 5% da parte inferior */
+  right: 2%; /* Distância de 5% da parte direita */
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilo dos ícones de redes sociais */
+.social-icon img {
+  width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos ícones de redes sociais */
+.social-icon img:hover,
+.whatsapp-icon:hover {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+  filter: brightness(1.2); /* Aumenta o brilho do ícone */
+}
+
+/* Estilo do footer */
+.footer {
+  width: 100%;
+  height: 50px; /* Altura do footer */
+  background-color: #004E8F; /* Cor de fundo azul */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Estilo do texto dentro do footer */
+.footer-text {
+  font-family: 'Times New Roman', Times, serif; /* Aplica a fonte Times New Roman */
+  font-size: 14px;
+}
+
