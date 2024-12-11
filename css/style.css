@@ -60,7 +60,9 @@ body, html {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Estilo retângulo do contêiner */
+
+
+/* Estilo retângulo do topo*/
 .container {
   width: 100%;
   height: 120px;
@@ -69,12 +71,11 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   margin: 0x; 
   padding: 0px; 
 }
 
-/* Estilo retângulo do contêiner2*/
+/* Estilo retângulo do menu*/
 .container2 {
   width: 100%;
   height: 80px; /* Reduzindo a altura do retângulo */
@@ -91,13 +92,13 @@ body, html {
 /* Estilo para a logo */
 .logo {
     position: absolute; /* Permite posicionamento específico dentro do contêiner */
-    top: -20px; /* Coordenada Y do Figma */
-    left: 330px; /* Coordenada X do Figma */
-    width: 120px; /* Largura da logo */
-    height: auto; /* Altura da logo */
+    top: -50px; /* Coordenada Y do Figma */
+    left: 380px; /* Coordenada X do Figma */
+    width: 150px; /* Largura da logo */
+    height: 130px; /* Altura da logo */
     transform: rotate(-11.1deg); /* Inclinação da logo */
     border-radius: 8px; 
-    margin-top: 20px; 
+    margin-top: 40px; 
     flex-wrap: center;
     
 }
@@ -110,6 +111,7 @@ body, html {
   align-items: center;
   flex-wrap: wrap;
   text-align: center ;
+  top: 40px;
 }
 
 /* Estilo geral para cada letra */
@@ -117,10 +119,10 @@ body, html {
   font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
   font-size: 3rem; /* Tamanho do texto */
   font-weight: normal; /* Peso normal */
-  display: inline-block; /* Mantém as letras inline */
   top: 692px; /* Coordenada Y do Figma */
   left: 97px;
-  margin-left: 10px;
+  margin-left: 15px;
+  letter-spacing: -15px;
   text-shadow: 
   1px 1px 2px rgba(182, 182, 182, 0.5), /* Contorno escuro em volta das letras */
   -1px -1px 2px rgba(182, 182, 182, 0.5),
@@ -141,6 +143,103 @@ body, html {
   top: -20px;
  
 }
+
+/* Seção principal */
+.section-servicos {
+  background-color: #32709f; /* Cor de fundo de fallback */
+  background-image: url('img/bolinha.jpg'); /* Caminho para a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a seção */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-position: center; /* Centraliza a imagem no contêiner */
+  padding: 60px 20px; /* Espaçamento interno */
+  margin-top: -10px; /* Distância do carrossel acima */
+}
+
+
+  padding: 40px 20px; /* Espaçamento interno */
+  margin-top: 40px; /* Distância do carrossel acima */
+}
+
+/* Texto acima dos cards */
+.texto-superior {
+  text-align: center;
+  margin-bottom: 30px; /* Espaçamento entre texto e cards */
+}
+
+.titulo-principal {
+  font-size: 2em;
+  color: #28a745; /* Cor do título */
+  margin-bottom: 10px;
+}
+
+.descricao {
+  font-size: 1.2em;
+  color: #555; /* Cor do texto */
+}
+
+/* Container dos cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra para próxima linha */
+  justify-content: space-between; /* Espaço uniforme entre os cards */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo dos cards */
+.card {
+  width: calc(33.33% - 20px); /* Cada card ocupa 1/3 da largura com espaçamento */
+  background-color: #ffcc00; 
+  border: 1px solid #E49936; 
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* Imagem responsiva */
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+ /*Estilo do button */
+.btn-custom {
+  display: inline-block;
+  background-color: #e7da65;
+  color: #007bff;
+  text-decoration: none; /* Remove o sublinhado */
+  border: none;
+  padding: 4px 4px;
+  margin-top: -18px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif; 
+  transition: background-color 0.3s ease;
+}
+
+ /*Efeito de hover no button */
+.btn-custom:hover {
+  background-color: #89cdea;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #0c5599;
+}
+
+
+
+
+
 
 /* Estilo para cada item do menu */
 .menu-item {
@@ -185,10 +284,11 @@ body, html {
 }
 
 
+
 /* Estilo do retângulo do footer-contato */
 .footer-contato {
   width: 100%;
-  height: 400px; /* Altura ajustada */
+  height: 250px; /* Altura ajustada */
   position: relative;
   background-color: rgba(255, 204, 0, 0.30); /* Fundo com opacidade */
   display: flex;
@@ -199,28 +299,25 @@ body, html {
   padding: 0;
 }
 
-/* Estilo do retângulo do footer-contato */
-.footer-contato {
-  width: 100%;
-  height: 400px; /* Ajuste a altura conforme necessário */
-  position: relative;
-  background-color: rgba(255, 204, 0, 0.30);
-  display: flex;
-  justify-content: space-between; /* Alinha logo e texto de contato */
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
+/* Estilo exclusivo para o logo no footer */
+.footer-contato .logo-contato {
+  width: 200px; /* Tamanho ajustado */
+  height: auto; /* Mantém proporções */
+  margin-left: 20px; /* Espaço à esquerda */
+  display: block;
 }
+
 
 /* Estilo para logo e texto de contato */
 .logo-contato {
   flex-shrink: 0;
 }
 
-.logo {
-  width: 80px; /* Ajuste o tamanho do logo conforme necessário */
+.logo-contato {
+  width: 150px; /* Ajuste o tamanho do logo conforme necessário */
   height: auto;
   margin-right: 20px; /* Espaço entre logo e texto */
+  top: 50px;
 }
 
 .contato-info {
