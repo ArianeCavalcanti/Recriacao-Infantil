@@ -145,36 +145,69 @@ body, html {
 }
 
 /* Seção principal */
-.section-servicos {
-  background-color: #32709f; /* Cor de fundo de fallback */
-  background-image: url('img/bolinha.jpg'); /* Caminho para a imagem de fundo */
-  background-size: cover; /* Faz a imagem cobrir toda a seção */
-  background-repeat: no-repeat; /* Não repete a imagem */
-  background-position: center; /* Centraliza a imagem no contêiner */
-  padding: 60px 20px; /* Espaçamento interno */
-  margin-top: -10px; /* Distância do carrossel acima */
-}
-
-
-  padding: 40px 20px; /* Espaçamento interno */
-  margin-top: 40px; /* Distância do carrossel acima */
-}
-
+ .section-servicos { 
+    background-color: #32709f; /* Cor de fundo de fallback */
+    background-image: url('../img/bolinha.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a seção */ 
+    background-repeat: no-repeat; /* Não repete a imagem */ 
+    padding: 60px 20px; /* Espaçamento interno */ 
+    margin-top: -10px; /* Distância do carrossel acima */ 
+  }
+  
 /* Texto acima dos cards */
 .texto-superior {
-  text-align: center;
-  margin-bottom: 30px; /* Espaçamento entre texto e cards */
+  text-align: left;
+  margin-bottom: -80px; /* Espaçamento entre texto e cards */
+  font-size: 48px; /* Tamanho do texto principal */
+  font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
 }
 
+/* Texto personalizado */
 .titulo-principal {
-  font-size: 2em;
-  color: #28a745; /* Cor do título */
-  margin-bottom: 10px;
+  font-size: 48px; /* Tamanho do texto principal */
+  font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
+  text-align: center;
+}
+
+.titulo-principal span {
+  display: inline-block; /* Para facilitar posicionamento e cores */
+  margin: 10px; /* Espaço entre palavras */
+}
+
+.transforme {
+  color: blue;
+}
+
+.sua {
+  color: pink;
+}
+
+.festa {
+  color: orange;
+}
+
+.em {
+  color: purple;
+}
+
+.um {
+  color: green;
+}
+
+.evento {
+  color: red;
+}
+
+.memoravel {
+  color: #1A2293;
+  display: block; /* Força quebra de linha */
+  margin-right: 10px; /* Ajusta para a direita */
+  font-size: 54px; /* Aumenta o tamanho */
 }
 
 .descricao {
   font-size: 1.2em;
-  color: #555; /* Cor do texto */
+  color: #1A2293; /* Cor do texto */
 }
 
 /* Container dos cards */
@@ -206,13 +239,17 @@ body, html {
 }
 
 .card-body {
-  padding: 15px;
+  padding: -30px;
   text-align: center;
+  margin-top: -20px;
+
 }
 
 .card-title {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: #1A2293;
+ 
 }
  /*Estilo do button */
 .btn-custom {
@@ -221,10 +258,10 @@ body, html {
   color: #007bff;
   text-decoration: none; /* Remove o sublinhado */
   border: none;
-  padding: 4px 4px;
-  margin-top: -18px;
+  padding: 2px 2px;
+  margin-top: -20px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 8px;
   font-family: 'Arial', sans-serif; 
   transition: background-color 0.3s ease;
 }
