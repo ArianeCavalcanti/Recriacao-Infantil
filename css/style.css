@@ -2,6 +2,8 @@
 body, html {
   margin: 0;
   padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -512,6 +514,7 @@ body, html {
     margin-right: 0; /* Remove espaçamento lateral */
   }
 
+
   .contato-info {
     align-items: center; /* Centraliza o texto */
     text-align: center;
@@ -521,4 +524,162 @@ body, html {
     position: static;
     margin-top: 20px;
   }
+}
+
+
+
+/* Estilo página Sobre Nós*/
+.topo .sobre {
+  position: relative;
+}
+
+.imagem-topo {
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* Ajusta a imagem ao espaço sem distorção */
+}
+
+/* Container principal */
+.container-sobre {
+  position: relative;
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+/* Imagem do topo */
+.imagem-topo {
+  width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+  height: auto;
+}
+
+/* Texto ao lado esquerdo da imagem */
+.texto-sobre {
+  position: absolute;
+  top: 643px; /* Alinha ao topo da imagem */
+  left: 0; /* Encosta no lado esquerdo */
+  height: 80%; /* Altura igual à imagem */
+  background: linear-gradient(180deg, rgba(240, 151, 212, 0.29) 0%, rgba(255, 204, 0, 0.45) 100%);
+  color: #fff;
+  padding: 10px; /* Espaçamento interno */
+  text-align: center; /* Alinha o texto à esquerda */
+  border-radius: 30px;
+  width: 65%; /* Define uma largura para o texto (ajustável) */
+  box-sizing: border-box; /* Inclui padding dentro da largura definida */
+
+}
+
+
+
+.texto-sobre h2 {
+
+  font-size: 2.5rem;
+  color: #b2103b;
+  margin-bottom: 10px;
+}
+
+.texto-sobre p {
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Sessão Missão, Visão e Valores */
+.mvv {
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Lakki Reddy', sans-serif;
+  margin-top: 478px; /* Distância do texto */
+}
+
+/* Tamanho da fonte do título */
+.mvv h1 {
+  font-size: 4rem; /* Tamanho do título */
+  font-family: 'Lakki Reddy', sans-serif;
+  color: #b2103b;
+  margin-bottom: 20px;
+  
+}
+
+/* Ajuste para os blocos que contêm as imagens e textos */
+.blocos {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espaçamento entre os blocos */
+  flex-wrap: wrap;
+}
+
+/* Ajuste para o bloco individual */
+.bloco {
+  max-width: 350px; /* Largura do bloco */
+  text-align: center;
+  border-radius: 8px;
+  padding: 25px; /* Espaçamento interno */
+  
+}
+
+/* Ajuste para as imagens */
+.bloco img {
+  width: 180px; /* Tamanho da imagem */
+  height: 180px; /* Tamanho da imagem */
+  object-fit: cover; /* Mantém a proporção  */
+  border-radius: 50%; /* Torna as imagens circulares */
+  margin-bottom: 20px;
+}
+
+/* Tamanho da fonte dos títulos dentro dos blocos */
+.bloco h2 {
+  color: #b2103b;
+  font-size: 2.5rem; 
+  margin-bottom: 15px;
+}
+
+/* Ajuste para o tamanho do texto nos blocos */
+.bloco p {
+  font-size: 1.4rem; 
+  color: #555;
+  line-height: 1.5; /* Ajuste no espaçamento entre as linhas */
+}
+
+
+/* Seção da CEO */
+.ceo {
+  padding: 40px 20px;
+  font-family: 'Times New Roman', serif; /* Aplica a fonte Times New Roman apenas à seção CEO */
+}
+
+.conteudo-ceo {
+  display: flex;
+  align-items: flex-start; /* Alinha o conteúdo ao topo */
+  justify-content: flex-start; /* Garante que o conteúdo seja alinhado à esquerda */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  max-width: 1200px; /* Ajuste o tamanho máximo da seção */
+  margin: 0 auto; /* Centraliza a seção */
+}
+
+.imagem-ceo img {
+  position: relative;
+  width: 500px; 
+  height: 600px; 
+  object-fit: cover; 
+  border-radius: 45px; 
+  margin-top: 100px;
+  margin-left: -30%;
+  
+}
+
+.texto-ceo {
+  flex: 1;
+  color: #333;
+}
+
+.texto-ceo h2 {
+  font-size: 2.5rem; 
+  color: #4c4c4c;
+  margin-bottom: 15px;
+}
+
+.texto-ceo p {
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  text-align: center;
 }
