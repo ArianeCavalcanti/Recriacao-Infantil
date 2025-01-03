@@ -1269,16 +1269,35 @@ ul li, p {
   margin-top: -20px;
 }
 
-.topo-orcamento .orcamentos img {
+.topo-orcamentos .orcamentos img {
   width: 1840px;
-  height: 495px;
-  border-radius: 10px;
+  height: 600px;
+  border-radius: 5px;
 }
+
+.texto-orcamentos {
+  font-family: 'Lakki Reddy';
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: rgb(246, 235, 243);
+  -webkit-background-clip: text; /* Permite o gradiente no texto */
+  background-clip: text;
+  margin-top: -180px;
+  margin-left: 40px;
+  text-shadow: 
+    1px 1px 2px rgba(12, 153, 153, 0.9), /* Contorno escuro em volta das letras */
+    -1px -1px 2px rgba(255, 253, 253, 0.958),
+    1px -1px 2px rgba(228, 155, 192, 0.5),
+    -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+
+
 
 .solicite-orcamento {
   width: 645px;
   height: 112px;
-  text-align: left;
+  text-align: center;
   color: #9400D3;
   text-shadow: 
   1px 1px 2px rgba(137, 219, 241, 0.5), /* Contorno escuro em volta das letras */
@@ -1289,8 +1308,8 @@ ul li, p {
   font-family: 'Lakki Reddy', cursive;
   font-weight: 400;
   word-wrap: break-word;
-  margin-top: -200px;
-  text-align: center;
+  margin-top: -150px;
+ 
 }
 
 .main-section {
