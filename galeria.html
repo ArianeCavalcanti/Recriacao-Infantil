@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ariane dos Santos Cavalcanti">
     <meta http-equiv="refresh" content="30">
-    <title>Recriação Infantil</title>
+    <title>Recreação Infantil</title>
    
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lakki+Reddy&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-galeria">
 
-    <header></header>
+    <header>
     <!-- Div do retângulo com logo -->
     <div class="container">
 
@@ -40,8 +40,7 @@
             <p>    <span class="letter" style="color: #50e876;">l</span> </p>
         </div>
     </div>
-
-
+      
 
     <center>
         <!-- Div do retângulo com navegação-->
@@ -57,19 +56,169 @@
             </div>
     </center>
 
+
 </header>
 
+       <!-- Topo da Página -->
+       <section class="topo-galeria">
+        <div class="galerias">
+          <img src="./img/a30.webp" alt="Atividades Infantis">
+    
+        </div>
+      </section>
+
+<!-- Seção com texto e cards -->
+<section class="section-galeria">
+  <div class="texto-galerias">
+    <h4 class="titulo-Galeria">Galeria de Fotos</h4>
+    </div>
+    <div class="Texto-secundario">
+    <h4 class="texto-galeria">Nós somos a escolha ideal para festas e recreação infantil.<br> No Aventura Kids, 
+      criamos momentos inesquecíveis repletos de diversão, aprendizado e muita alegria.<br> Com uma equipe dedicada e profissional,
+       oferecemos diversos serviços de recreação infantil, incluindo teatro,<br> brinquedos interativos e apresentações educativas.<br>
+       Tudo isso pensado para encantar e divertir crianças de todas as idades.</h4>
+     
+  </div>
+  <div class="galeria-cards-container">
+
+    <!-- Cards -->
+    <div class="galeria-card">
+        <img src="./img/foto2.png" class="card-img-top" alt="Aventura">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(1)">Ver mais</a>
+
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="galeria-card">
+        <img src="./img/b14.jpg" class="card-img-top" alt="Gincanas">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(2)">Ver mais</a>
+
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="galeria-card">
+        <img src="./img/of5.jpg" class="card-img-top" alt="Shows">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(3)">Ver mais</a>
+
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="galeria-card">
+        <img src="./img/a33.jpg" class="card-img-top" alt="Brinquedos">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(4)">Ver mais</a>
+
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="galeria-card">
+        <img src="./img/fa10.jpg" class="card-img-top" alt="Oficinas">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(5)">Ver mais</a>
+
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="galeria-card">
+        <img src="./img/fe25.jpg" class="card-img-top" alt="Teatro">
+        <div class="galeria-card-body">
+          <a href="#" class="galeria-btn-custom" onclick="openModal(6)">Ver mais</a>
+
+        </div>
+      </div>
+    </div>
+
+</section>
 
 
+<!-- Modal com Carrossel -->
+<div id="galeriaModal" class="modal-galeria">
+  <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      
+      <!-- Carrossel -->
+      <div class="carousel-container">
+          <div class="carousel">
+              <!-- Slide 1 -->
+              <div class="slide">
+                  <img src="./img/foto2.png" alt="Imagem 1">
+              </div>
+              <!-- Slide 2 -->
+              <div class="slide">
+                  <img src="./img/b14.jpg" alt="Imagem 2">
+              </div>
+              <!-- Slide 3 -->
+              <div class="slide">
+                  <img src="./img/of5.jpg" alt="Imagem 3">
+              </div>
+              <!-- Slide 4 -->
+              <div class="slide">
+                  <img src="./img/a33.jpg" alt="Imagem 4">
+              </div>
+              <!-- Slide 5 -->
+              <div class="slide">
+                  <img src="./img/fa10.jpg" alt="Imagem 5">
+              </div>
+              <!-- Slide 6 -->
+              <div class="slide">
+                  <img src="./img/fe25.jpg" alt="Imagem 6">
+              </div>
+          </div>
+          <!-- Navegação dos pontos (dots) -->
+          <div class="carousel-nav">
+              <div class="nav-dot" onclick="moveToSlide(0)"></div>
+              <div class="nav-dot" onclick="moveToSlide(1)"></div>
+              <div class="nav-dot" onclick="moveToSlide(2)"></div>
+              <div class="nav-dot" onclick="moveToSlide(3)"></div>
+              <div class="nav-dot" onclick="moveToSlide(4)"></div>
+              <div class="nav-dot" onclick="moveToSlide(5)"></div>
+          </div>
+      </div>
+  </div>
+</div>
 
 
+<section class="section-galeria">
+  <div class="title-galerias">
+    <h4 class="title-Galeria">Galeria de  Videos</h4>
+    </div>
 
 
-
-
-
-
-
+       <!--Vídeos-->
+    <div class="galeria-video-container">
+      <!-- Vídeo 1 -->
+      <div class="galeria-video">
+          <video class="video-player" controls>
+              <source src="./img/v1.mp4" type="video/mp4">
+              
+          </video>
+      </div>
+  
+      <!-- Vídeo 2 -->
+      <div class="galeria-video">
+          <video class="video-player" controls>
+              <source src="./img/v2.mp4" type="video/mp4">
+              
+          </video>
+      </div>
+  
+      <!-- Vídeo 3 -->
+      <div class="galeria-video">
+          <video class="video-player" controls>
+              <source src="./img/v3.mp4" type="video/mp4">
+              
+          </video>
+      </div>
+  </div>
+  
 
 
 
@@ -115,8 +264,8 @@
   </div>
 
   <script src="script.js"></script>
-</body>
 
+</body>
 
 
 

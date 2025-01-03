@@ -6,21 +6,23 @@ body, html {
   background-color: #f9f9f9;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height:100%;
   overflow-x: hidden; /* Evita barras de rolagem horizontais */
+  
 }
 
-/* Estilo do contêiner do carrossel */
+/*------------ Estilo do contêiner do carrossel--------- */
 .carousel-container {
   width: 100%;
   max-width: 1920px;
   height: 490px;
   overflow: hidden;
   position: relative;
-  margin: 0px auto 0;
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .carousel {
@@ -36,9 +38,10 @@ body, html {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ajusta a imagem sem deformação */
+  margin: 0px;
 }
 
-/* Navegação do carrossel */
+/*---------- Navegação do carrossel----------- */
 .carousel-nav {
   position: absolute;
   bottom: 10%;  /* 10% de distância da parte inferior da imagem */
@@ -59,12 +62,12 @@ body, html {
 }
 
 .nav-dot.active {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(19, 53, 176, 0.8);
 }
 
+/*-------------------------------------------------------------------------------------*/
 
-
-/* Estilo retângulo do topo*/
+/*------- Estilo retângulo do topo--------*/
 .container {
   width: 100%;
   height: 120px;
@@ -77,11 +80,11 @@ body, html {
   padding: 0px; 
 }
 
-/* Estilo retângulo do menu*/
+/*------- Estilo retângulo do menu-------*/
 .container2 {
   width: 100%;
   height: 80px; /* Reduzindo a altura do retângulo */
-  background-color: rgba(255, 204, 0, 0.22);
+  background: linear-gradient(90deg, rgba(255, 226, 89, 0.45) 0%, rgba(255, 167, 81, 0.45) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +94,31 @@ body, html {
   padding: 0; 
 }
 
-/* Estilo para a logo */ 
+/* Página Sobre Nós */
+.page-sobre .container2 {
+  background: linear-gradient(90deg, rgba(230, 92, 0, 0.45) 0%, rgba(249, 212, 35, 0.45) 100%);
+}
+
+/* Página Serviços*/
+.page-servicos .container2 {
+  background: linear-gradient(90deg, #1FA2FF 0%, #12D8FA 50%, #A6FFCB 100%);
+}
+
+.page-galeria .container2 {
+  background: linear-gradient(90deg, #C9FFBF 0%, #FFAFBD 100%)
+}
+
+.page-orcamentos .container2{
+  background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)
+}
+
+.page-contato .container2{
+  background: linear-gradient(90deg, #ACB6E5 0%, #86FDE8 100%)
+}
+
+
+
+/*-------- Estilo para a logo ---------- */ 
 .logo { 
   left: 380px;
   width: 150px; /* Largura da logo */ 
@@ -101,9 +128,10 @@ body, html {
   flex-shrink: 0; /* Garante que a logo não encolha */ 
   margin-left: 20px; /* Espaçamento da borda esquerda */
   
+  
 }
 
-/* Estilo para o texto "Recriação Infantil" */
+/*---------- Estilo para o texto "Recriação Infantil"----------- */
  .text-container {
   display: flex;
   justify-content: center;
@@ -111,9 +139,10 @@ body, html {
   flex-wrap: wrap; 
   margin-left: 20px; /* Espaço entre a logo e o texto */
   margin-top: 20px; /* Adicona espaço acima do texto para baixá-lo*/
+
  }
 
-/* Estilo geral para cada letra */
+/*----------- Estilo geral para cada letra -------------------- */
 .letter {
   font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
   font-size: 3rem; /* Tamanho do texto */
@@ -130,11 +159,11 @@ body, html {
 }
 
 
-/* Estilo do menu de navegação */
+/*------- Estilo do menu de navegação------- */
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 50px;
   align-items: center;
   margin-top: 50px; /* Ajuste o espaçamento entre o texto e o menu */
   position: absolute; /* Permite posicionamento específico dentro do contêiner */
@@ -146,13 +175,87 @@ body, html {
  
 }
 
-/* Estilo para o item de menu "Sobre Nós" */
+
+/*-------- Estilo para o item de menu "Sobre Nós"------- */
 .navbar .menu-item.sobre {
   white-space: nowrap; /* Evita quebra de linha */
   display: inline-block; /* Garante que o elemento ocupe apenas o espaço necessário */
 }
 
-/* Seção principal */
+
+/*--------- Estilo para cada item do menu ----------------*/
+.menu-item {
+  font-family: 'Lakki Reddy', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/*---------- Cores e estilo de cada item ---------------*/
+.home {
+  color: #822CAD;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.sobre {
+  color: #E49936;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.servicos {
+  color: #2E9BAE;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.galeria {
+  color: #F64FEB;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.orcamento {
+  color: #387C1B;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.contato {
+  color: #2A30D8;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+/*-------- Efeito ao passar o mouse sobre os itens do menu ----------*/
+.menu-item:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Adiciona sombra suave ao passar o mouse */
+}
+
+/*---------- Seção principal ------------- */
  .section-servicos { 
     background-color: #32709f; /* Cor de fundo de fallback */
     background-image: url('../img/bolinha.jpg'); /* Caminho para a imagem de fundo */
@@ -162,28 +265,46 @@ body, html {
     margin-top: -10px; /* Distância do carrossel acima */ 
   }
   
-/* Texto acima dos cards */
+/*----------- Texto acima dos cards --------- */
 .texto-superior {
   text-align: left;
   margin-bottom: -80px; /* Espaçamento entre texto e cards */
   font-size: 48px; /* Tamanho do texto principal */
   font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
+  text-shadow: 
+ 1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+ -1px -1px 2px rgba(192, 185, 185, 0.5),
+ 1px -1px 2px rgba(182, 182, 182, 0.5),
+ -1px 1px 2px rgba(182,182 , 182, 0.5);
+  
 }
 
-/* Texto personalizado */
+/*----------- Texto personalizado --------------*/
 .titulo-principal {
   font-size: 48px; /* Tamanho do texto principal */
   font-family: 'Lakki Reddy', cursive; /* Fonte personalizada */
   text-align: center;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+ 
 }
 
 .titulo-principal span {
   display: inline-block; /* Para facilitar posicionamento e cores */
-  margin: 10px; /* Espaço entre palavras */
+  margin: 10px; /* Espaço entre palavras */ 
+  text-shadow: 
+ 1px 1px 2px rgba(203, 33, 161, 0.9), /* Contorno escuro em volta das letras */
+ -1px -1px 2px rgba(245, 124, 124, 0.5),
+ 1px -1px 2px rgba(182, 182, 182, 0.5),
+ -1px 1px 2px rgba(182,182 , 182, 0.5);
 }
 
 .transforme {
   color: blue;
+  
 }
 
 .sua {
@@ -218,7 +339,7 @@ body, html {
   color: #1A2293; /* Cor do texto */
 }
 
-/* Container dos cards */
+/*----------- Container dos cards ------------*/
 .cards-container {
   display: flex;
   flex-wrap: wrap; /* Permite quebra para próxima linha */
@@ -226,7 +347,7 @@ body, html {
   gap: 20px; /* Espaçamento entre os cards */
 }
 
-/* Estilo dos cards */
+/*------------ Estilo dos cards ----------------*/
 .card {
   width: calc(33.33% - 20px); /* Cada card ocupa 1/3 da largura com espaçamento */
   background-color: #ffcc00; 
@@ -259,7 +380,7 @@ body, html {
   color: #1A2293;
  
 }
- /*Estilo do button */
+ /*----------- Estilo do button -------------- */
 .btn-custom {
   display: inline-block;
   background-color: #e7da65;
@@ -269,63 +390,19 @@ body, html {
   padding: 2px 2px;
   margin-top: -20px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 5px;
   font-family: 'Arial', sans-serif; 
   transition: background-color 0.3s ease;
 }
 
- /*Efeito de hover no button */
+ /*---------- Efeito de hover no button ------------ */
 .btn-custom:hover {
   background-color: #89cdea;
   transform: scale(1.05);
   box-shadow: 0 8px 16px #0c5599;
 }
 
-
-/* Estilo para cada item do menu */
-.menu-item {
-  font-family: 'Lakki Reddy', cursive;
-  font-size: 36px;
-  font-weight: 400;
-  text-align: center;
-  word-wrap: break-word;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
-
-/* Cores e estilo de cada item */
-.home {
-  color: #822CAD;
-}
-
-.sobre {
-  color: #E49936;
-}
-
-.servicos {
-  color: #2E9BAE;
-}
-
-.galeria {
-  color: #F64FEB;
-}
-
-.orcamento {
-  color: #387C1B;
-}
-
-.contato {
-  color: #2A30D8;
-}
-
-/* Efeito ao passar o mouse sobre os itens do menu */
-.menu-item:hover {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Adiciona sombra suave ao passar o mouse */
-}
-
-
-/* Seção Depoimentos com Fundo */
+/*------------- Seção Depoimentos com Fundo ----------------- */
 .depoimentos {
   background-image: url('../img/fundo.webp'); 
   background-size: cover; /* Faz a imagem cobrir toda a área */
@@ -333,25 +410,24 @@ body, html {
   background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
   padding: 50px 20px;
   text-align: center;
-  color: #fff; /* Torna o texto branco para contrastar com a imagem */
   position: relative;
 }
 
 
 .titulo-depoimentos span {
   display: inline-block;
-  padding: 0 15px;
-   font-size: 2.5rem;
+  font-size: 4rem;
   font-family: "Lakki Reddy", cursive; /* Fonte personalizada */
-  position: relative;
+  font-weight: 400;
   margin-bottom: 30px;
-  color: #FF3B30; /* Torna o texto transparente para exibir o gradiente */
+  text-align: center;
   -webkit-background-clip: text; /* Permite o gradiente no texto */
   background-clip: text;
-  background-image: linear-gradient(90deg, #FF3B30 0%, #F78F89 58%, #F1CCCA 100%);
-  text-shadow: -1px -1px 0 #FDFAFA, 1px 1px 0 #FDFAFA; /* Stroke branco */
-  transform: rotate(3.84deg); /* Rotaciona o texto *
-  color: #e74c3c; /* Cor do título "Depoimentos" */
+  background-image: linear-gradient(90deg, #FF3B30 0%, #F78F89 58%, #8c8888 100%);
+  -webkit-text-stroke: 1px white; /* Adiciona o contorno branco */ 
+  -webkit-text-fill-color: transparent;
+  transform: rotate(-3.84deg); /* Rotaciona o texto */
+  
 }
 
 .depoimentos-container {
@@ -383,16 +459,20 @@ body, html {
 }
 
 .estrelas {
-  color: #ffcc00;
   font-size: 1.5rem;
   margin: 10px 0;
+  -webkit-text-stroke: 1px white; /* Adiciona o contorno branco */
+  color: #ffcc00; /* Cor interna amarela */
+  -webkit-text-fill-color: #ffcc00; /* Preenchimento do texto amarelo */
 }
+
 
 .texto-depoimento {
   font-size: 0.9rem;
   color: #555;
   margin: 10px 0;
   line-height: 1.5;
+  
 }
 
 .autor-depoimento {
@@ -401,7 +481,7 @@ body, html {
   margin-top: 10px;
 }
 
-/* Estilo do retângulo do footer-contato */
+/*------- Estilo do retângulo do footer-contato --------------- */
 .footer-contato {
   width: 100%;
   height: 450px; /* Altura fixa */
@@ -412,9 +492,14 @@ body, html {
   padding: 20px 50px; /* Espaçamento interno */
   box-sizing: border-box;
   position: relative;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(22, 3, 97, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.248),
+  -1px 1px 2px rgba(223, 220, 220, 0.975);
 }
 
-/* Logo no Footer */
+/*----------- Logo no Footer --------------- */
 .logo-contato {
   max-width: 450px; /* Ajusta o tamanho da logo */
   height: auto; /* Mantém a proporção da logo */
@@ -428,7 +513,7 @@ body, html {
   border-radius: 8px;
 }
 
-/* Informações de contato */
+/*----------- Informações de contato ------------*/
 .contato-info {
   display: flex;
   flex-direction: column;
@@ -439,7 +524,7 @@ body, html {
   text-align: left;
 }
 
-/* Títulos e textos de contato */
+/*------------ Títulos e textos de contato -----------------*/
 .contato-text,
 .numero-text,
 .email-text,
@@ -448,21 +533,21 @@ body, html {
   margin: 0; /* Remove margem extra */
 }
 
-/* Contato com ícone do WhatsApp */
+/*------------- Contato com ícone do WhatsApp -----------------*/
 .contato-item {
   display: flex;
   align-items: center; /* Alinha verticalmente o texto e o ícone */
   gap: 10px; /* Espaço entre o número e o ícone */
 }
 
-/* Ícone do WhatsApp */
+/*---------------- Ícone do WhatsApp ---------------*/
 .whatsapp-icon {
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Redes Sociais */
+/*----------- Redes Sociais ------------*/
 .redes-sociais {
   position: absolute;
   bottom: 2%;
@@ -477,18 +562,18 @@ body, html {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Efeito hover */
+/*----------- Efeito hover ------------- */
 .social-icon img:hover,
 .whatsapp-icon:hover {
   transform: scale(1.2);
   filter: brightness(1.2);
 }
 
-/* Footer inferior */
+/*---------- Footer inferior -----------------*/
 .footer {
   width: 100%;
   height: 80px;
-  background-color: #004E8F;
+  background: linear-gradient(90deg, #72C6EF 0%, #004E8F 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -500,35 +585,9 @@ body, html {
   font-size: 18px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .footer-contato {
-    flex-direction: column; /* Alinha elementos verticalmente */
-    height: auto; /* Altura automática */
-    gap: 20px;
-    padding: 10px;
-  }
+/*-------------------------------------------------------------------------*/
 
-  .logo-contato {
-    max-width: 100px; /* Reduz tamanho da logo em dispositivos menores */
-    margin-right: 0; /* Remove espaçamento lateral */
-  }
-
-
-  .contato-info {
-    align-items: center; /* Centraliza o texto */
-    text-align: center;
-  }
-
-  .redes-sociais {
-    position: static;
-    margin-top: 20px;
-  }
-}
-
-
-
-/* Estilo página Sobre Nós*/
+/*--------- Estilo página Sobre Nós-------------*/
 .topo .sobre {
   position: relative;
 }
@@ -539,20 +598,20 @@ body, html {
   object-fit: cover; /* Ajusta a imagem ao espaço sem distorção */
 }
 
-/* Container principal */
+/*-------------- Container principal --------------*/
 .container-sobre {
   position: relative;
   display: flex;
   align-items: flex-start; /* Alinha os itens ao topo */
 }
 
-/* Imagem do topo */
+/*--------- Imagem do topo --------- */
 .imagem-topo {
   width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
   height: auto;
 }
 
-/* Texto ao lado esquerdo da imagem */
+/*------------ Texto ao lado esquerdo da imagem ----------- */
 .texto-sobre {
   position: absolute;
   top: 643px; /* Alinha ao topo da imagem */
@@ -567,9 +626,6 @@ body, html {
   box-sizing: border-box; /* Inclui padding dentro da largura definida */
 
 }
-
-
-
 .texto-sobre h2 {
 
   font-size: 2.5rem;
@@ -582,8 +638,9 @@ body, html {
   color: #333;
   text-align: center;
 }
+/*--------------------------------------------------------------*/
 
-/* Sessão Missão, Visão e Valores */
+/*----------Sessão Missão, Visão e Valores -----------*/
 .mvv {
   padding: 40px 20px;
   text-align: center;
@@ -595,12 +652,15 @@ body, html {
 .mvv h1 {
   font-size: 4rem; /* Tamanho do título */
   font-family: 'Lakki Reddy', sans-serif;
-  color: #b2103b;
+  background: linear-gradient(150deg, rgba(239, 42, 42, 0.766) 20%, rgba(36, 18, 194, 0.45) 75%);
   margin-bottom: 20px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
   
 }
 
-/* Ajuste para os blocos que contêm as imagens e textos */
+/*-------- Ajuste para os blocos que contêm as imagens e textos ---------*/
 .blocos {
   display: flex;
   justify-content: center;
@@ -608,7 +668,7 @@ body, html {
   flex-wrap: wrap;
 }
 
-/* Ajuste para o bloco individual */
+/*----------- Ajuste para o bloco individual -------------- */
 .bloco {
   max-width: 350px; /* Largura do bloco */
   text-align: center;
@@ -617,34 +677,45 @@ body, html {
   
 }
 
-/* Ajuste para as imagens */
+/*---------- Ajuste para as imagens --------------*/
 .bloco img {
   width: 180px; /* Tamanho da imagem */
   height: 180px; /* Tamanho da imagem */
   object-fit: cover; /* Mantém a proporção  */
   border-radius: 50%; /* Torna as imagens circulares */
   margin-bottom: 20px;
+  border: 1px solid #E49936; 
 }
 
-/* Tamanho da fonte dos títulos dentro dos blocos */
+/*---------- Tamanho da fonte dos títulos dentro dos blocos ------------*/
 .bloco h2 {
-  color: #b2103b;
+  background: linear-gradient(150deg, rgba(239, 42, 42, 0.766) 25%, rgba(36, 18, 194, 0.45) 75%);
   font-size: 2.5rem; 
   margin-bottom: 15px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  
 }
 
-/* Ajuste para o tamanho do texto nos blocos */
+/*---------- Ajuste para o tamanho do texto nos blocos  --------------*/
 .bloco p {
   font-size: 1.4rem; 
   color: #555;
+  text-shadow: 
+  1px 1px 2px rgba(253, 249, 249, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(162, 176, 238, 0.5),
+  1px -1px 2px rgba(129, 237, 199, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
   line-height: 1.5; /* Ajuste no espaçamento entre as linhas */
 }
+/*-----------------------------------------------------------------*/
 
-
-/* Seção da CEO */
+/*---------------- Seção da CEO ------------ */
 .ceo {
   padding: 40px 20px;
   font-family: 'Times New Roman', serif; /* Aplica a fonte Times New Roman apenas à seção CEO */
+  
 }
 
 .conteudo-ceo {
@@ -664,17 +735,28 @@ body, html {
   border-radius: 45px; 
   margin-top: 100px;
   margin-left: -30%;
+  border: 1px solid #E49936; 
   
 }
 
 .texto-ceo {
   flex: 1;
   color: #333;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
 }
 
 .texto-ceo h2 {
   font-size: 2.5rem; 
   color: #4c4c4c;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
   margin-bottom: 15px;
 }
 
@@ -682,4 +764,1037 @@ body, html {
   font-size: 1.2rem; 
   line-height: 1.6; 
   text-align: center;
+}
+
+.container3 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+/*----------------------------*/
+/*------------ Estilo página Serviços -------------*/
+
+/* Topo da página Serviços */
+.topo-servicos {
+  margin-top: -20px;
+}
+
+.topo-servicos .Servicos img {
+  width: 1640px;
+  height: 495px;
+  border-radius: 10px;
+}
+
+
+
+.texto-servico{
+  
+  font-family: 'Lakki Reddy';
+  font-size: 38px;
+  margin-bottom: 15px;
+  text-align: center;
+  -webkit-background-clip: text; /* Permite o gradiente no texto */
+  background-clip: text;
+  background-image: linear-gradient(90deg, #FF3B30 0%, #240ea2 58%, #9b9999 100%);
+  -webkit-text-fill-color: transparent;
+  margin-top: -110px;
+  margin-left: 40px;
+  
+}
+
+.page-servicos .section-servico {
+  background-image: url('../img/fundo.servicos.jpg'); /* Caminho para a imagem de fundo */
+  background-size: cover; /* Faz a imagem cobrir toda a seção */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-position: top center; /* Mostra mais a parte superior */
+  background-position: bottom center; /* Mostra mais a parte inferior */
+  background-position: center left; /* Mostra mais o lado esquerdo */
+  background-position: center right; /* Mostra mais o lado direito */
+  
+  padding: 40px 20px; /* Espaçamento interno */
+  margin-top: -70px;
+  border-radius: 8px; /* Cantos arredondados */
+  display: flex;
+  grid-template-columns: repeat(3, 2fr); /* 3 colunas de largura fixa */
+  gap: 10px; /* Espaçamento entre os cards */
+  justify-items: center; /* Centraliza os cards horizontalmente */
+  margin-bottom: 0;
+  min-height: 150px; /* Altura mínima */
+  width: 100%; /* Largura total */
+  
+}
+.page-servicos .container-servicos {
+  margin-bottom: 0; /* Garante que não haja espaço extra após os cards */
+  
+}
+
+
+.card-aventuras {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+  
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: 90px; /* Move o card para cima */
+  right: 270px; /* Move o card para a esquerda */
+}
+
+.card-aventuras :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-brinquedos {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -1350px; /* Move o card para cima */
+  right: -810px; /* Move o card para a esquerda*/
+}
+
+.card-brinquedos :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+}
+
+.card-recreacao {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 480px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -450px; /* Move o card para cima */
+  left: 210px; /* Move o card para a direita */
+}
+
+.card-recreacao :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+}
+
+.card-oficinas {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -1200px; /* Move o card para baixo */
+  right: 240px; /* Move o card para a esquerda */
+}
+
+.card-oficinas :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+}
+
+.card-shows {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -1900px; /* Move o card para cima */
+  left: 800px; /* Move o card para a direita */
+}
+
+.card-shows :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.card-festas {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -1620px; /* Move o card para cima */
+  right: 150px; /* Move o card para a esquerda */
+}
+.card-festas :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+}
+
+.card-maquiagem {
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  transition: transform 0.3s;
+  width: 400px; /* Largura fixa para os cards */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  text-align: center;
+  align-items: center;;
+  padding: 0px;
+
+  /* Ajustes para reposicionar */
+  position: relative; /* Permite mover o elemento */
+  top: -2320px; /* Move o card para cima */
+  right: -480px; /* Move o card para a direita */
+}
+
+.card-maquiagem :hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
+}
+.card-title {
+  font-size: 2.5rem; /* Tamanho do título */
+  font-family: 'Lakki Reddy', sans-serif;
+  text-align: center;
+  background: linear-gradient(150deg, rgba(239, 42, 42, 0.766) 20%, rgba(36, 18, 194, 0.45) 75%);
+  margin-bottom: 15px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.imagem-servico {
+  width: 100%;
+  height: 200px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Garante proporção da imagem */
+  border-radius: 5px; /* Cantos levemente arredondados */
+  margin-bottom: 15px;
+}
+
+/* Ajuste geral para o texto dos cards */
+ .card-aventuras ul, .card-recreacao p, .card-brinquedos ul, .card-oficinas ul, .card-shows ul, .card-festas ul, .card-maquiagem ul {
+  font-family: 'Lakki Reddy', cursive; /* Aplica a fonte */
+  font-size: 1.6rem; /* Aumenta o tamanho das letras */
+  color: #0b5485; /* Define a cor do texto */
+  list-style-type: none; /* Remove os marcadores da lista */
+  text-align: center;
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+ul li, p {
+  margin: 10px 0; /* Espaçamento entre itens de lista e parágrafos */
+
+}
+
+/* Botão de orçamento */
+.botao-orcamento {
+  text-align: right;
+  margin: 20px 0;
+  
+}
+
+.btn-orcamento {
+  display: inline-block;
+  background-color: #98d6a0;
+  color: #007bff;
+  text-decoration: none; /* Remove o sublinhado */
+  border: none;
+  padding: 2px 2px;
+  margin-top: -20px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Times New Roman', sans-serif; 
+  transition: background-color 0.3s ease;
+ font-size: 1.5rem;
+ text-shadow: 
+ 1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+ -1px -1px 2px rgba(192, 185, 185, 0.5),
+ 1px -1px 2px rgba(182, 182, 182, 0.5),
+ -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+.btn-orcamento:hover {
+  background-color: #89cdea;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #0c5599;
+}
+
+
+.page-servicos .container-servicos {
+  margin-bottom: 2240px; /* Espaço menor após os cards */
+  max-width: 1920px;
+  height: 490px;
+}
+
+/*---------------- Seção Galeria -----------------*/
+
+.topo-galeria .galerias img {
+  width: 1640px;
+  height: 495px;
+  border-radius: 10px;
+}
+
+.texto-galerias {
+  font-family: 'Lakki Reddy';
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(218, 69, 176);
+  -webkit-background-clip: text; /* Permite o gradiente no texto */
+  background-clip: text;
+  margin-top: -130px;
+  margin-left: 40px;
+  text-shadow: 
+    1px 1px 2px rgba(12, 153, 153, 0.9), /* Contorno escuro em volta das letras */
+    -1px -1px 2px rgba(255, 253, 253, 0.958),
+    1px -1px 2px rgba(228, 155, 192, 0.5),
+    -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+
+ .texto-galeria{
+  font-family: 'Times New Roman', Times;
+  font-size: 25px;
+  text-align: center;
+  color: rgb(65, 69, 117);
+  text-shadow: 
+  1px 1px 2px rgba(248, 243, 243, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(192, 185, 185, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+
+ }
+
+ .title-galerias {
+  font-family: 'Lakki Reddy';
+  font-size: 48px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(218, 69, 176);
+  -webkit-background-clip: text; /* Permite o gradiente no texto */
+  background-clip: text;
+  margin-top: -50px;
+  margin-left: 40px;
+  text-shadow: 
+    1px 1px 2px rgba(12, 153, 153, 0.9), /* Contorno escuro em volta das letras */
+    -1px -1px 2px rgba(255, 253, 253, 0.958),
+    1px -1px 2px rgba(228, 155, 192, 0.5),
+    -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+
+
+
+.galeria-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar para a próxima linha em telas menores */
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; /* Centraliza os cards */
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.galeria-card {
+  flex: 1 1 calc(33.33% - 20px); /* Ajusta para 3 cards por linha */
+  max-width: calc(33.33% - 20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Garante que o conteúdo extra não saia do card */
+  text-align: center; /* Centraliza o conteúdo */
+  transition: transform 0.3s ease; /* Animação suave no hover */
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border: 1px solid #E49936; /* Fundo branco para destaque */
+  padding-bottom: 20px; /* Espaçamento interno no final */
+}
+
+.galeria-card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.galeria-card img {
+  width: 100%; /* Imagem ocupa a largura total do card */
+  height: 300px;
+  margin-top: -10px; /* Sobe a imagem um pouco */
+  border-bottom: 2px solid #cccbcb; /* Linha separando imagem do conteúdo */
+}
+
+.galeria-btn-custom {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #382ad0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 30%; /* Botão mais largo dentro do card */
+  text-align: center;
+}
+
+.galeria-btn-custom:hover {
+  background-color: #89cdea;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #0c5599;/* Cor diferente ao passar o mouse */
+}
+
+/* galeria de vídeos*/
+
+.galeria-video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os vídeos */
+  justify-content: center; /* Centraliza os vídeos */
+  margin-bottom: 25px;
+}
+
+.galeria-video {
+  flex: 1 1 calc(33.33% - 20px); /* Três vídeos por linha */
+  max-width: calc(33.33% - 20px);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Impede conteúdo extra */
+  border: 1px solid #E49936;
+}
+
+.video-player {
+  width: 100%;
+  height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+  border-radius: 10px;
+}
+
+/* Modal */
+/* Estilo do Modal */
+.modal-galeria {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-galeria img {
+  width: 100%; /* Preenche a largura do contêiner */
+  height: 100%; /* Preenche a altura do contêiner */
+  object-fit: contain; /* Mostra a imagem inteira sem cortar */
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  background: linear-gradient(90deg, #A1FFCE 0%, #FAFFD1 100%);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/*----------------- EStilo página Orçamento -------------------*/
+
+.topo-orcamento {
+  margin-top: -20px;
+}
+
+.topo-orcamento .orcamentos img {
+  width: 1840px;
+  height: 495px;
+  border-radius: 10px;
+}
+
+.solicite-orcamento {
+  width: 645px;
+  height: 112px;
+  text-align: left;
+  color: #9400D3;
+  text-shadow: 
+  1px 1px 2px rgba(137, 219, 241, 0.5), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(182, 182, 182, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+  font-size: 44px;
+  font-family: 'Lakki Reddy', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-top: -200px;
+  text-align: center;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 250px;
+
+}
+
+.left-column {
+  width: 100%; /* Coluna do texto à esquerda */
+}
+
+.right-column {
+  width: 100%; /* Coluna com os contatos */
+  text-align: left; /* Texto alinhado à esquerda */
+  margin: 8px auto;
+  margin-left: 80px;
+  margin-top: -80px;
+}
+
+.titulo-orcamento{
+  width: 226px;
+  text-align: center;
+  color: #1A2293;
+  text-shadow: 
+  1px 1px 2px rgba(182, 182, 182, 0.5), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(182, 182, 182, 0.5),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+  font-size: 24px;
+  font-family: 'Lakki Reddy', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+ 
+
+}
+
+.contato-orcamento {
+  width: 365px;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 10px auto;
+  margin-right: 250px;
+}
+
+.descricao-orcamento {
+  width: 739px;
+  height: 199px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
+  text-shadow: 
+  1px 1px 2px rgba(213, 241, 244, 0.5), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgb(251, 246, 246),
+  1px -1px 2px rgb(249, 245, 245),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+  font-size: 28px;
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin: 10px auto;
+  margin-left: 170px;
+}
+
+/*---------------- Estilo do formulário -------------------*/
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.form-orcamento {
+  width: 80%;
+  max-width: 800px;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-item {
+  width: 48%; /* Cada item ocupa 48% para alinhar lado a lado */
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #929090;
+  text-shadow: 
+  1px 1px 2px rgba(204, 230, 239, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(255, 253, 253, 0.958),
+  1px -1px 2px rgba(182, 182, 182, 0.5),
+  -1px 1px 2px rgba(182,182 , 182, 0.5);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #9400D3;
+  box-shadow: 0 0 5px rgba(148, 0, 211, 0.5);
+}
+ 
+/*---------- Estilo do checkboxes ---------------*/
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-group .row {
+  display: flex;
+  justify-content: center; /* Centraliza os checkboxes */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 20px; /* Espaço entre os checkboxes */
+  margin-bottom: 10px; /* Espaço entre as linhas */
+}
+
+.checkbox-group .form-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o checkbox e o texto */
+  width: 200px; /* Ajusta a largura automaticamente para evitar sobreposição */
+}
+
+/* Centralizar e aumentar o texto do <strong> */
+.checkbox-group p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #777777;
+  text-shadow: 
+    1px 1px 2px rgba(134, 136, 136, 0.9), /* Contorno escuro em volta das letras */
+    -1px -1px 2px rgba(255, 253, 253, 0.958),
+    1px -1px 2px rgba(185, 183, 184, 0.5),
+    -1px 1px 2px rgba(220, 218, 218, 0.5);
+  margin-bottom: 15px;
+}
+
+/* Alinhar o texto "Mensagem" e o botão "Enviar" */
+.mensagem-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha tudo à esquerda */
+  margin-left: 100px; /* Adiciona espaçamento de 10 cm à esquerda */
+  margin-top: 10px;
+}
+
+.mensagem-section label {
+  font-size: 18px;
+  color: #929090;
+  margin-bottom: 10px;
+}
+
+
+.mensagem-section textarea {
+  width: 100%;
+  max-width: 600px;
+  min-height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espaço entre textarea e botão */
+}
+
+.mensagem-section .enviar-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #9400D3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 0; /* Remove deslocamento extra */
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mensagem-section .enviar-btn:hover {
+  background-color: #7A009C;
+  
+}
+
+/*---------------- Estilo do Contato -------------------*/
+
+.container-contato {
+  width: 1920px;
+  height: 80px;
+  background: rgba(180, 231, 236, 0.29);
+  border-bottom: 4px solid rgba(147, 47, 198, 0.45);
+}
+.title-contato {
+ 
+  padding-top: 10px;
+  margin-left: 50px;
+  color: #9400D3;
+  font-size: 48px;
+  font-family: "Lakki Reddy";
+  font-weight: 400;
+  word-wrap: break-word;
+  text-shadow: 
+  1px 1px 2px rgba(240, 116, 238, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(255, 253, 253, 0.958),
+  1px -1px 2px rgba(185, 183, 184, 0.5),
+  -1px 1px 2px rgba(220, 218, 218, 0.5);
+
+}
+
+.imagem-cont{
+  width: 460px; 
+  height: 365px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+  object-fit: cover; /* Mantém a proporção  */
+  border: 1px solid #E49936; 
+}
+
+
+
+
+.texto-contato{
+  width: 460px;
+  height: 365px;
+  color: #9400D3;
+  font-family: "Lakki Reddy";
+  font-size: 28px;
+  word-wrap: break-word;
+  margin-left: 450px;
+  margin-top: -250px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 160px;
+  text-shadow: 
+  1px 1px 2px rgba(152, 238, 238, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(255, 253, 253, 0.958),
+  1px -1px 2px rgba(185, 183, 184, 0.5),
+  -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+
+
+.title-2 {
+  width: 460px;
+  height: 365px;
+  color: #6a0695;
+  font-family: "Lakki Reddy";
+  font-size: 28px;
+  word-wrap: break-word;
+  margin-left: 150px;
+  margin-top: -335px;
+  text-align: center;
+  
+  
+}
+
+.title-contatos{
+  width: 460px;
+  height: 365px;
+  color: #9400D3;
+  font-family: "Lakki Reddy";
+  font-size: 48px;
+  word-wrap: break-word;
+  margin-left: 120px;
+  margin-top: -360px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 110px;
+  text-shadow: 
+  1px 1px 2px rgba(152, 238, 238, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(255, 253, 253, 0.958),
+  1px -1px 2px rgba(185, 183, 184, 0.5),
+  -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+.contatos {
+  width: 403px;
+  height: 238px;
+  text-align: center;
+  color: #2A66DF;
+  font-size: 32px;
+  font-family: "Lakki Reddy";
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-top: 40px;
+  text-shadow: 
+  1px 1px 2px rgba(152, 238, 238, 0.9), /* Contorno escuro em volta das letras */
+  -1px -1px 2px rgba(255, 253, 253, 0.958),
+  1px -1px 2px rgba(185, 183, 184, 0.5),
+  -1px 1px 2px rgba(220, 218, 218, 0.5);
+}
+
+.texto-contatos{
+  background: linear-gradient(90deg,#FF4E50 0% , #F9D423 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: 'Lakki Reddy';
+  font-size: 30px;
+  margin-top: -1150px;
+  margin-left: 450px;
+  transform: rotate(13.84deg);
+  transform-origin: 0 0;
+  text-align: center;
+  
+}
+
+.img-contato img{
+  width: 350.81px; 
+  height: 379px;
+  border-radius: 20px;
+  margin-left: 930px; /*move a imagem para a direita*/
+  margin-top: 750px; /*move a imagem para baixo*/
+  transform: rotate(-140.34deg); 
+  transform-origin: 0 0;
+  box-sizing: border-box; 
+  object-fit: cover; /* Mantém a proporção  */
+  border: 1px solid #E49936; 
+}
+
+.img2-contato img{
+  width: 430px;
+  height: 248.90px; 
+  border-radius: 10px;
+  margin-left: 830px; /*move a imagem para a direita*/
+  margin-top: -180px; /*move a imagem para cima*/
+  transform: rotate(-10.98deg);
+  transform-origin: 0 0;
+  margin-bottom: 25px; 
+  border-radius: 8px; /* Cantos arredondados */
+  object-fit: cover; /* Mantém a proporção  */
+  border: 1px solid #E49936; 
+}
+
+/* Estilo para o botão "Enviar" */
+.cont-enviar-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #9400D3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 80px; /* Remove deslocamento extra */
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Estilo ao passar o mouse sobre o botão */
+.cont-enviar-btn:hover {
+  background-color: #fc93e3; /* Cor um pouco mais escura */
+  transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+
+.section-contato   {
+  margin-top: -250px;
+  margin-left: 850px;
+}
+.section-contatos {
+  margin-top: -378px;
+  margin-left: 150px;
+  background: linear-gradient(70deg, #9796F0 0%, #FBC7D4 100%);
+  padding: 20px; /* Adicione padding para espaço interno */
+  border-radius: 8px; /* Bordas arredondadas (opcional) */
+  width: 375px; 
+  height: 810px;
+  margin-bottom: 25px;
+    
+  }
+
+.form-group{
+  max-width: 600px;
+}
+.form-group1{
+  max-width: 350px;
+  margin-top: 8px;
+}
+
+.form-group2{
+  max-width: 350px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.form-group2 label {
+  color: #1c0eae;
+  font-family: "Lakki Reddy";
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: -8px;
+  margin-top: 5px;
+  
+}
+
+.form-group3 label {
+  color: #9400D3;
+  font-family: "Lakki Reddy";
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: -8px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.mensagem-contato textarea {
+  width: 100%;
+  max-width: 600px;
+  min-height: 150px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #b6b4b4;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(235, 209, 232, 0.1);
+  margin-bottom: 10px; /* Espaço entre textarea e botão */
+}
+
+.mensagem-contato .enviar-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #9400D3;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mensagem-contato .enviar-btn:hover {
+  background-color: #7A009C;
+  transform: scale(1.05); /* Efeito de leve aumento */
+}
+
+/*--------- Estilo chekbox ---------------*/
+.checkbox-contato {
+  font-family: "Lakki Reddy", cursive;
+  font-size: 18px;
+  color: #ca77ed;
+}
+
+/*------ texto idade das crianças -----*/
+.label-checkbox {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px; 
+  
+}
+
+.checkbox-option input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #9400D3;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  margin-left: 50px;
+  
+}
+
+.checkbox-option input[type="radio"]:checked {
+  background-color: #dc9af9;
+}
+
+.checkbox-option label {
+  font-size: 18px;
+  cursor: pointer;
+  margin: 0;
+  margin-top: 10px;
+  
 }
